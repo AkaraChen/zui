@@ -1,0 +1,32 @@
+.zui_tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    &_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding-inline: 12px;
+        padding-block: 8px;
+        font-size: 14px;
+
+        &:hover {
+            background-color: rgba(221, 223, 228, 0.4);
+        }
+
+        &_active {
+            border-color: rgba(59, 130, 246, 0.7);
+            background: linear-gradient(
+                180deg,
+                rgba(96, 165, 250, 0.1) 0%,
+                rgba(255, 255, 255, 0) 60%,
+                rgba(255, 255, 255, 0) 100%
+            );
+        }
+    }
+}
