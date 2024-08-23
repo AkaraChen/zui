@@ -13,7 +13,10 @@ export const Simple: FC = () => {
             trigger={<Button>Edit Profile</Button>}
             title='Catppuccin Themes'
             footer={
-                <div onClick={() => setOpen(false)} style={{ display: 'flex', width: '100%', gap: '8px' }}>
+                <div
+                    onClick={() => setOpen(false)}
+                    style={{ display: 'flex', width: '100%', gap: '8px' }}
+                >
                     <Button style={{ width: '100%' }}>Install</Button>
                     <Button style={{ width: '100%' }}>Close</Button>
                 </div>

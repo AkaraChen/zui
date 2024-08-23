@@ -1,41 +1,48 @@
-.zui_hover-card_content {
-    animation-duration: 400ms;
-    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: transform, opacity;
-    box-shadow:
-        0 4px 6px -1px rgba(0, 0, 0, 0.1),
-        0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border: 1px solid rgba(209, 213, 219, 0.7);
-    border-bottom: 1px solid rgba(209, 213, 219, 0.7);
-    border-radius: 6px;
-    background-color: white;
-    overflow: hidden;
-    color: rgb(75, 83, 97);
-}
-.zui_hover-card_content[data-side='top'] {
-    animation-name: slideDownAndFade;
-}
-.zui_hover-card_content[data-side='right'] {
-    animation-name: slideLeftAndFade;
-}
-.zui_hover-card_content[data-side='bottom'] {
-    animation-name: slideUpAndFade;
-}
-.zui_hover-card_content[data-side='left'] {
-    animation-name: slideRightAndFade;
-}
+.zui_hover-card {
+    &_content {
+        animation-duration: 400ms;
+        animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform, opacity;
+        box-shadow:
+            0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(209, 213, 219, 0.7);
+        border-bottom: 1px solid rgba(209, 213, 219, 0.7);
+        border-radius: 6px;
+        background-color: white;
+        overflow: hidden;
+        color: rgb(75, 83, 97);
 
-.zui_hover-card_arrow {
-    fill: white;
-}
+        &[data-side='top'] {
+            animation-name: slideDownAndFade;
+        }
 
-.zui_hover-card_trigger {
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 100%;
-}
-.zui_hover-card_trigger:focus {
-    box-shadow: 0 0 0 2px white;
+        &[data-side='right'] {
+            animation-name: slideLeftAndFade;
+        }
+
+        &[data-side='bottom'] {
+            animation-name: slideUpAndFade;
+        }
+
+        &[data-side='left'] {
+            animation-name: slideRightAndFade;
+        }
+    }
+
+    &_arrow {
+        fill: white;
+    }
+
+    &_trigger {
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 100%;
+
+        &:focus {
+            box-shadow: 0 0 0 2px white;
+        }
+    }
 }
 
 @keyframes slideUpAndFade {
