@@ -1,4 +1,10 @@
-export type ZComponent = 'button' | 'hover-card' | 'card' | 'link' | 'menu'
+export type ZComponent =
+    | 'button'
+    | 'hover-card'
+    | 'card'
+    | 'link'
+    | 'menu'
+    | 'input'
 export type ZVariant = 'primary' | 'secondary' | 'normal'
 export type ZCompoenntPart = 'trigger' | 'content' | 'icon' | 'item'
 export type ZSize = 'small' | 'medium' | 'large'
