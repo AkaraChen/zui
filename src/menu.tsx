@@ -1,9 +1,9 @@
-import type { ComponentProps, FC, PropsWithChildren } from 'react'
-import './menu.less'
 import clsx from 'clsx'
-import { zc } from './utils'
 import type { LucideIcon } from 'lucide-react'
+import type { ComponentProps, FC, PropsWithChildren } from 'react'
 import { Icon } from './icon'
+import './menu.less'
+import { zc } from './utils'
 
 export interface MenuProps extends PropsWithChildren<ComponentProps<'div'>> {}
 

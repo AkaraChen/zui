@@ -1,8 +1,8 @@
-import { useState, type FC } from 'react'
-import { Dialog } from './dialog'
-import { Button } from './button'
-import { Statistic } from './statistic'
 import { Download, Timer, User } from 'lucide-react'
+import { useState, type FC } from 'react'
+import { Button } from './button'
+import { Dialog } from './dialog'
+import { Statistic } from './statistic'
 
 export const Simple: FC = () => {
     const [open, setOpen] = useState(false)

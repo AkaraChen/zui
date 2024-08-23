@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import type { LucideIcon } from 'lucide-react'
 import type { ComponentProps, FC } from 'react'
-import { zc, type ZSize, type ZVariant } from './utils'
 import './icon.less'
+import { zc, type ZSize, type ZVariant } from './utils'
 
 export interface IconProps extends ComponentProps<LucideIcon> {
     lucide: LucideIcon

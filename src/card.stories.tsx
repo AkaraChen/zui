@@ -1,4 +1,6 @@
+import { Download } from 'lucide-react'
 import { Card, CardTitle } from './card'
+import { Statistic } from './statistic'
 
 export const card = () => (
     <Card
@@ -7,5 +9,6 @@ export const card = () => (
         }}
         head={<CardTitle>Card Title</CardTitle>}
         body={<p>Card Body</p>}
+        foot={<Statistic icon={Download} label='Published at July 31, 2024' />}
     />
 )

@@ -1,9 +1,9 @@
+import clsx from 'clsx'
 import type { LucideIcon } from 'lucide-react'
 import type { ComponentProps, FC, ReactNode } from 'react'
 import { Icon } from './icon'
 import './statistic.less'
 import { zc } from './utils'
-import clsx from 'clsx'
 
 export interface StatisticProps extends ComponentProps<'div'> {
     icon: LucideIcon

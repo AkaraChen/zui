@@ -1,6 +1,6 @@
+import { Github, Laptop, Users } from 'lucide-react'
 import type { FC } from 'react'
 import { Menu, MenuItem } from './menu'
-import { Github, Laptop, Users } from 'lucide-react'
 
 export const basic: FC = () => (
     <Menu style={{ width: '100px' }}>

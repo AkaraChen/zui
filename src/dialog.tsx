@@ -1,7 +1,7 @@
-import type { FC, PropsWithChildren, ReactNode } from 'react'
-import './dialog.less'
 import * as RDialog from '@radix-ui/react-dialog'
 import clsx from 'clsx'
+import type { FC, PropsWithChildren, ReactNode } from 'react'
+import './dialog.less'
 import { zc } from './utils'
 
 export interface DialogProps extends PropsWithChildren {

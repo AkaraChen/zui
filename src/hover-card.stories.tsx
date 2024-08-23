@@ -1,8 +1,8 @@
+import { Github, Laptop, Users } from 'lucide-react'
 import type { FC } from 'react'
-import { HoverCard } from './hover-card'
 import { Button } from './button'
-import { Github, Users, Laptop } from 'lucide-react'
-import { MenuItem, Menu } from './menu'
+import { HoverCard } from './hover-card'
+import { Menu, MenuItem } from './menu'
 
 export const nav: FC = () => (
     <HoverCard trigger={<Button variant='primary'>Hello</Button>}>

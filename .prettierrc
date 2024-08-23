@@ -5,5 +5,5 @@
     "tabWidth": 4,
     "jsxSingleQuote": true,
     "arrowParens": "avoid",
-    "plugins": ["prettier-plugin-css-order"]
+    "plugins": ["prettier-plugin-css-order", "prettier-plugin-organize-imports"]
 }

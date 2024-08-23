@@ -1,7 +1,7 @@
-import type { ComponentProps, FC } from 'react'
-import { zc } from './utils'
 import clsx from 'clsx'
+import type { ComponentProps, FC } from 'react'
 import './input.less'
+import { zc } from './utils'
 
 export interface InputProps extends ComponentProps<'input'> {}
 
