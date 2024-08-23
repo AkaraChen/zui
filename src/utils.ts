@@ -5,6 +5,8 @@ export type ZComponent =
     | 'link'
     | 'menu'
     | 'input'
+    | 'statistic'
+    | 'dialog'
 export type ZVariant = 'primary' | 'secondary' | 'normal'
 export type ZCompoenntPart = 'trigger' | 'content' | 'icon' | 'item'
 export type ZSize = 'small' | 'medium' | 'large'

@@ -1,8 +1,12 @@
-import type { ComponentProps, FC, PropsWithChildren } from 'react'
+import {
+    forwardRef,
+    type ComponentProps,
+    type FC,
+    type PropsWithChildren,
+} from 'react'
 import './button.less'
 import clsx from 'clsx'
 import type { LucideIcon } from 'lucide-react'
-import '@fontsource/ia-writer-quattro'
 import { zc } from './utils'
 
 export interface ButtonProps
@@ -12,7 +16,7 @@ export interface ButtonProps
     kbdShortcut?: string
 }
 
-export const Button: FC<ButtonProps> = props => {
+export const Button: FC<ButtonProps> = forwardRef((props, ref) => {
     const {
         children,
         className,
@@ -25,6 +29,7 @@ export const Button: FC<ButtonProps> = props => {
         <button
             className={clsx(className, zc('button'), zc('button', variant))}
             {...rest}
+            ref={ref}
         >
             {Icon && <Icon className={zc('button', 'icon')} />}
             {children}
@@ -33,4 +38,4 @@ export const Button: FC<ButtonProps> = props => {
             )}
         </button>
     )
-}
+})

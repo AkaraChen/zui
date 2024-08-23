@@ -3,7 +3,6 @@ import './menu.less'
 import clsx from 'clsx'
 import { zc } from './utils'
 import type { LucideIcon } from 'lucide-react'
-import '@fontsource/ia-writer-quattro'
 import { Icon } from './icon'
 
 export interface MenuProps extends PropsWithChildren<ComponentProps<'div'>> {}

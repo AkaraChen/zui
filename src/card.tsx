@@ -1,6 +1,5 @@
 import type { ComponentProps, FC, PropsWithChildren, ReactNode } from 'react'
 import './card.less'
-import '@fontsource/ia-writer-quattro'
 import { zc } from './utils'
 
 export interface CardProps extends PropsWithChildren<ComponentProps<'div'>> {

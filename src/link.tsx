@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import type { ComponentProps, FC, PropsWithChildren } from 'react'
 import './link.less'
-import '@fontsource/ia-writer-quattro'
 
 export interface LinkProps extends PropsWithChildren<ComponentProps<'a'>> {}
 

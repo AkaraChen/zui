@@ -1,3 +1,5 @@
 {
-    "extends": "@akrc/tsconfig/react.json"
+    "extends": "@akrc/tsconfig/react.json",
+    "include": ["src", ".ladle"],
+    "exclude": []
 }
