@@ -1,0 +1,36 @@
+{
+    "name": "zui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@9.7.1",
+    "devDependencies": {
+        "@akrc/tsconfig": "^1.1.0",
+        "@ladle/react": "^4.1.0",
+        "@types/react": "^18.3.4",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react-swc": "^3.7.0",
+        "less": "^4.2.0",
+        "prettier": "^3.3.3",
+        "prettier-config-akrc": "^1.1.1",
+        "tslib": "^2.6.3",
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.4",
+        "vite": "^5.4.2"
+    },
+    "dependencies": {
+        "@fontsource/ia-writer-quattro": "^5.0.11",
+        "@radix-ui/react-hover-card": "^1.1.1",
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.429.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "scripts": {
+        "dev": "ladle serve",
+        "format": "prettier --write ."
+    }
+}

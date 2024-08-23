@@ -1,0 +1,37 @@
+.zui_menu {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    letter-spacing: -0.4px;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    font-family: 'iA Writer Quattro', sans-serif;
+
+    &_item {
+        background: white;
+        border: none;
+        padding-inline: 10px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        font-size: 14px;
+        height: 32px;
+        line-height: 20px;
+        border-radius: 4px;
+        gap: 8px;
+        font-family: 'iA Writer Quattro', sans-serif;
+
+        &:hover {
+            background-color: #eeeff1;
+        }
+
+        &_icon {
+            color: rgb(8 76 207);
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
