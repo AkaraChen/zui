@@ -1,25 +1,25 @@
 .zui_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: inset 0 -2px 0 0 rgba(111, 123, 144, 0.1);
+    border: none;
+    border: 1px rgba(75, 83, 97, 0.2) solid;
+    border-radius: 4px;
+    padding-inline: 12px;
+    height: 36px;
     color: black;
     font-size: 14px;
-    border: none;
-    padding-inline: 12px;
     font-family: 'iA Writer Quattro', sans-serif;
-    height: 36px;
-    box-shadow: inset 0 -2px 0 0 rgba(111, 123, 144, 0.1);
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    border: 1px rgba(75, 83, 97, 0.2) solid;
 
     &_primary {
-        background-color: #084ccf;
-        color: white;
         box-shadow:
             inset 0 -2px 0 0 #053794,
             0 1px 3px 0 #e6effe;
+        background-color: #084ccf;
+        color: white;
         &:hover {
             background-color: #0740ac;
         }
@@ -31,17 +31,17 @@
     }
 
     &_kbd {
-        height: 20px;
-        width: 20px;
         display: flex;
-        align-items: center;
         justify-content: center;
-        background: #ffffff1a;
-        color: white;
+        align-items: center;
+        margin-right: -4px;
+        margin-left: -2px;
         border: 1px hsla(0, 0%, 100%, 0.2) solid;
         border-radius: 2px;
+        background: #ffffff1a;
+        width: 20px;
+        height: 20px;
+        color: white;
         font-size: 11px;
-        margin-left: -2px;
-        margin-right: -4px;
     }
 }

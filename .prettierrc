@@ -1,1 +1,9 @@
-"prettier-config-akrc"
+{
+    "singleQuote": true,
+    "trailingComma": "all",
+    "semi": false,
+    "tabWidth": 4,
+    "jsxSingleQuote": true,
+    "arrowParens": "avoid",
+    "plugins": ["prettier-plugin-css-order"]
+}

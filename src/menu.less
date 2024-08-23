@@ -1,27 +1,27 @@
 .zui_menu {
-    padding: 4px;
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    letter-spacing: -0.4px;
     box-shadow:
         0 4px 6px -1px rgba(0, 0, 0, 0.1),
         0 2px 4px -1px rgba(0, 0, 0, 0.06);
     background-color: white;
+    padding: 4px;
+    width: fit-content;
     font-family: 'iA Writer Quattro', sans-serif;
+    letter-spacing: -0.4px;
 
     &_item {
-        background: white;
-        border: none;
-        padding-inline: 10px;
         display: flex;
-        justify-items: center;
         align-items: center;
-        font-size: 14px;
-        height: 32px;
-        line-height: 20px;
-        border-radius: 4px;
+        justify-items: center;
         gap: 8px;
+        border: none;
+        border-radius: 4px;
+        background: white;
+        padding-inline: 10px;
+        height: 32px;
+        font-size: 14px;
+        line-height: 20px;
         font-family: 'iA Writer Quattro', sans-serif;
 
         &:hover {
@@ -29,9 +29,9 @@
         }
 
         &_icon {
-            color: rgb(8 76 207);
             width: 14px;
             height: 14px;
+            color: rgb(8 76 207);
         }
     }
 }
