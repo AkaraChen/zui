@@ -7,6 +7,7 @@ import {
     type PropsWithChildren,
 } from 'react'
 import './button.less'
+import { Kbd } from './kbd'
 import { zc } from './utils'
 
 export interface ButtonProps
@@ -33,9 +34,7 @@ export const Button: FC<ButtonProps> = forwardRef((props, ref) => {
         >
             {Icon && <Icon className={zc('button', 'icon')} />}
             {children}
-            {kbdShortcut && (
-                <kbd className={zc('button', 'kbd')}>{kbdShortcut}</kbd>
-            )}
+            {kbdShortcut && <Kbd variant={variant}>{kbdShortcut}</Kbd>}
         </button>
     )
 })

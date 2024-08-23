@@ -14,3 +14,9 @@ export const withIconAndShortcut: FC = () => (
         Download Now
     </Button>
 )
+
+export const normalWithAll: FC = () => (
+    <Button icon={Download} kbdShortcut='D' variant='normal'>
+        Download Now
+    </Button>
+)
