@@ -7,6 +7,9 @@ settings:
 importers:
     .:
         dependencies:
+            '@fontsource-variable/lora':
+                specifier: ^5.0.19
+                version: 5.0.19
             '@fontsource/ia-writer-quattro':
                 specifier: ^5.0.11
                 version: 5.0.11
@@ -709,6 +712,12 @@ packages:
         resolution:
             {
                 integrity: sha512-X8R8Oj771YRl/w+c1HqAC1szL8zWQRwFvgDwT129k9ACdBoud/+/rX9V0qiMl6LWUdP9voC2nDVZYPMQQsb6eA==,
+            }
+
+    '@fontsource-variable/lora@5.0.19':
+        resolution:
+            {
+                integrity: sha512-Nbg+iCCtdQrtvOI1GSwj8BuGTiPu8iY5KOVcUnHqLPoHy7o7/qzgSMaH9nfH9Mka+qxRzCn9+EdJbeTeFDajSQ==,
             }
 
     '@fontsource/ia-writer-quattro@5.0.11':
@@ -5010,6 +5019,8 @@ snapshots:
             react-dom: 18.3.1(react@18.3.1)
 
     '@floating-ui/utils@0.2.7': {}
+
+    '@fontsource-variable/lora@5.0.19': {}
 
     '@fontsource/ia-writer-quattro@5.0.11': {}
 
