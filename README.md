@@ -2,7 +2,7 @@
 
 A clone of the [zed website](https://zed.dev) UI using React and Less.
 
-[Stories](https://zui-nine.vercel.app) [TypeDoc](zui-typedoc.vercel.app)
+[Stories](https://zui-nine.vercel.app) [TypeDoc](https://zui-typedoc.vercel.app)
 
 ## Installation
 
