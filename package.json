@@ -40,6 +40,8 @@
         "prettier-plugin-css-order": "^2.1.2",
         "prettier-plugin-organize-imports": "^4.0.0",
         "tslib": "^2.6.3",
+        "typedoc": "^0.26.6",
+        "typedoc-material-theme": "^1.1.0",
         "typescript": "^5.5.4",
         "vite": "^5.4.2",
         "vite-plugin-dts": "^4.0.3"
@@ -58,7 +60,8 @@
     "scripts": {
         "dev": "ladle serve",
         "format": "prettier --write .",
-        "build": "vite build"
+        "build": "vite build",
+        "doc": "typedoc src/index.ts --plugin typedoc-material-theme  --themeColor '#1C6EF3'"
     },
     "publishConfig": {
         "access": "public"
