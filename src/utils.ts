@@ -12,6 +12,7 @@ export type ZComponent =
     | 'cmdk'
     | 'navigation'
     | 'title'
+    | 'nav'
 export type ZVariant = 'primary' | 'secondary' | 'normal'
 export type ZCompoenntPart = 'trigger' | 'content' | 'icon' | 'item'
 export type ZSize = 'small' | 'medium' | 'large'
