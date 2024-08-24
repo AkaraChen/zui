@@ -18,7 +18,12 @@ export interface HoverCardProps extends PropsWithChildren {
 export const HoverCard: FC<HoverCardProps> = props => {
     const { trigger, open, onOpenChange, children } = props
     return (
-        <RHoverCard.Root open={open} onOpenChange={onOpenChange}>
+        <RHoverCard.Root
+            open={open}
+            onOpenChange={onOpenChange}
+            openDelay={200}
+            closeDelay={200}
+        >
             <RHoverCard.Trigger className={zc('hover-card', 'trigger')}>
                 {trigger}
             </RHoverCard.Trigger>

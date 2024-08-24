@@ -10,6 +10,7 @@ export type ZComponent =
     | 'tab'
     | 'kbd'
     | 'cmdk'
+    | 'navigation'
 export type ZVariant = 'primary' | 'secondary' | 'normal'
 export type ZCompoenntPart = 'trigger' | 'content' | 'icon' | 'item'
 export type ZSize = 'small' | 'medium' | 'large'
@@ -23,6 +24,6 @@ export type ZClassNameParts =
     | ZState
     | (string & {})
 
-export function zc(...parts: ZClassNameParts[]) {
+export function zc(...parts: ZClassNameParts[]): string {
     return 'zui_' + parts.join('_')
 }
