@@ -1,14 +1,19 @@
 import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vite'
-import pkg from './package.json'
 import dts from 'vite-plugin-dts'
+import pkg from './package.json'
 
 const dev = defineConfig({
     plugins: [react()],
 })
 
 const prod = defineConfig({
-    plugins: [react(), dts()],
+    plugins: [
+        react(),
+        dts({
+            exclude: ['**/*.stories.tsx'],
+        }),
+    ],
     build: {
         lib: {
             entry: './src/index.ts',

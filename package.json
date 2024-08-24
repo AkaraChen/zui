@@ -12,6 +12,8 @@
         "url": "git+https://github.com/akarachen/zui.git"
     },
     "homepage": "https://github.com/akarachen/zui.git",
+    "types": "./dist/index.d.ts",
+    "module": "./dist/zui.js",
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
