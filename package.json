@@ -1,10 +1,30 @@
 {
-    "name": "zui",
+    "name": "@akrc/zui",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "keywords": [],
-    "author": "",
+    "description": "A simple React UI library",
+    "keywords": [
+        "react",
+        "ui",
+        "components"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/akarachen/zui.git"
+    },
+    "homepage": "https://github.com/akarachen/zui.git",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/zui.js"
+        },
+        "./style.css": {
+            "import": "./dist/style.css"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "author": "AkaraChen",
     "license": "ISC",
     "packageManager": "pnpm@9.7.1",
     "type": "module",
@@ -20,9 +40,9 @@
         "prettier-plugin-css-order": "^2.1.2",
         "prettier-plugin-organize-imports": "^4.0.0",
         "tslib": "^2.6.3",
-        "tsup": "^8.2.4",
         "typescript": "^5.5.4",
-        "vite": "^5.4.2"
+        "vite": "^5.4.2",
+        "vite-plugin-dts": "^4.0.3"
     },
     "dependencies": {
         "@fontsource-variable/lora": "^5.0.19",
@@ -31,12 +51,16 @@
         "@radix-ui/react-hover-card": "^1.1.1",
         "clsx": "^2.1.1",
         "cmdk": "^1.0.0",
-        "lucide-react": "^0.429.0",
+        "lucide-react": "^0.435.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
     },
     "scripts": {
         "dev": "ladle serve",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "build": "vite build"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
